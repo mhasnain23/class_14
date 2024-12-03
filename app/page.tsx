@@ -2,8 +2,8 @@
 
 import { SignIn, SignOutButton, useUser } from "@clerk/nextjs";
 
-export default async function Home() {
-  const user = await useUser();
+export default function Home() {
+  const user = useUser();
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
